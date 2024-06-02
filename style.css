@@ -1,3 +1,14 @@
+/*Installer une font*/
+@font-face {
+  font-family: "retro";
+  src: url("./font/retro.ttf") format("truetype");
+}
+
+body {
+  font-family: "retro", sans-serif;
+  background-color: #797979;
+}
+
 canvas {
   display: block;
   margin: 0 auto;
@@ -7,54 +18,13 @@ canvas {
   box-shadow: 0 0 10px rgba(130, 128, 128, 0.5);
   position: relative;
   overflow: hidden;
-}
 
-canvas::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: repeating-linear-gradient(
-    to bottom,
-    transparent,
-    transparent 1px,
-    rgba(255, 255, 255, 0.1) 1px,
-    rgba(255, 255, 255, 0.1) 2px
-  );
-  z-index: 1;
-}
-
-canvas::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: repeating-linear-gradient(
-    to right,
-    transparent,
-    transparent 1px,
-    rgba(211, 26, 26, 0.1) 1px,
-    rgba(180, 21, 21, 0.1) 2px
-  );
-  z-index: 2;
-  animation: scanline 0.1s linear infinite;
-}
-
-@keyframes scanline {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 100%;
-  }
-}
-
-body {
-  background-color: #797979;
-  font-family: "Arial", sans-serif;
-  text-align: center;
+  image-rendering: optimizeSpeed; /* Crude scaling when zoomed */
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Safari */
+  image-rendering: optimize-contrast; /* CSS3 Proposed */
+  image-rendering: pixelated; /* CSS4 Proposed */
+  image-rendering: crisp-edges; /* CSS4 Proposed */
+  -ms-interpolation-mode: nearest-neighbor;
 }
