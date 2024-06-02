@@ -8,13 +8,16 @@ Le jeu met en scène le robot humanoïde et personnage joueur Mega Man luttant c
 
 ### LE JEU
 
+<p align="center">⬇️---------------⬇️ </p>
+<br>
 <p align="center">
-
 A voir ici : [MEGAMAN - FUsion](https://kduchevreuil.github.io/)
-
-[![Image](./images/titleScreen/titleReadme.png)](https://kduchevreuil.github.io/)
-
 </p>
+<br>
+<p align="center">
+[![Image](./images/titleScreen/titleReadme.png)](https://kduchevreuil.github.io/)
+</p>
+<br>
 <p align="center">
     ⬆️---------------⬆️
 </p>
